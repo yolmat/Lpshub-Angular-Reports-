@@ -1,0 +1,107 @@
+{
+  "color": {
+    "brand/red": {
+      "$type": "color",
+      "$value": "#EB194B"
+    },
+    "brand/white": {
+      "$type": "color",
+      "$value": "#FFFFFF"
+    },
+    "brand/black": {
+      "$type": "color",
+      "$value": "#000000"
+    },
+    "brand/orange": {
+      "$type": "color",
+      "$value": "#FF9169"
+    },
+    "brand/yellow": {
+      "$type": "color",
+      "$value": "#FFBE55"
+    },
+    "brand/green": {
+      "$type": "color",
+      "$value": "#46DCAA"
+    },
+    "brand/celeste": {
+      "$type": "color",
+      "$value": "#55E1E6"
+    },
+    "brand/blue": {
+      "$type": "color",
+      "$value": "#91BEFF"
+    },
+    "surface/canvas": {
+      "$type": "color",
+      "$value": "#F7F7F7"
+    },
+    "surface/subtle": {
+      "$type": "color",
+      "$value": "#F1F1F1"
+    },
+    "border/default": {
+      "$type": "color",
+      "$value": "#DCDCDC"
+    },
+    "text/secondary": {
+      "$type": "color",
+      "$value": "#575757"
+    },
+    "surface/selected": {
+      "$type": "color",
+      "$value": "#FFF0F4"
+    },
+    "dark/canvas": {
+      "$type": "color",
+      "$value": "#111113"
+    },
+    "dark/surface": {
+      "$type": "color",
+      "$value": "#1C1C20"
+    },
+    "dark/subtle": {
+      "$type": "color",
+      "$value": "#27272D"
+    },
+    "dark/border": {
+      "$type": "color",
+      "$value": "#50505A"
+    },
+    "dark/text": {
+      "$type": "color",
+      "$value": "#F5F5F7"
+    },
+    "dark/muted": {
+      "$type": "color",
+      "$value": "#B9B9C3"
+    },
+    "dark/selected": {
+      "$type": "color",
+      "$value": "#351821"
+    }
+  },
+  "fontFamily": {
+    "interface": "Lopes Sans",
+    "accent": "Born Ready Upright"
+  },
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    24,
+    32,
+    48,
+    64
+  ],
+  "radius": {
+    "control": 6,
+    "card": 8,
+    "dialog": 12
+  },
+  "provenance": {
+    "brand": "Manual da Marca Lopes, páginas 14–20, 31–36, 38–43",
+    "product": "Neutros e dark mode são decisões de produto; modo escuro solicitado expressamente pelo usuário."
+  }
+}
