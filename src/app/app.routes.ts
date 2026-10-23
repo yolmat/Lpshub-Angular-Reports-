@@ -8,10 +8,22 @@ import { WorkspaceLayoutComponent } from './shared/ui/workspace-layout/workspace
 export const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'login' },
   { path: 'login', component: LoginComponent, title: 'Entrar | LpsHub' },
-  { path: '', component: WorkspaceLayoutComponent, children: [
-    { path: 'relatorios', component: ReportCatalogComponent, title: 'Relatórios | LpsHub' },
-    { path: 'relatorios/contas-a-receber/filtros', component: ReportFiltersComponent, title: 'Filtros | LpsHub' },
-    { path: 'relatorios/contas-a-receber/resultados', component: ReportResultsComponent, title: 'Contas a receber | LpsHub' }
-  ] },
-  { path: '**', redirectTo: 'login' }
+  {
+    path: '',
+    component: WorkspaceLayoutComponent,
+    children: [
+      { path: 'relatorios', component: ReportCatalogComponent, title: 'Relatórios | LpsHub' },
+      {
+        path: 'relatorios/contas-a-receber/filtros',
+        component: ReportFiltersComponent,
+        title: 'Filtros | LpsHub',
+      },
+      {
+        path: 'relatorios/contas-a-receber/resultados',
+        component: ReportResultsComponent,
+        title: 'Contas a receber | LpsHub',
+      },
+    ],
+  },
+  { path: '**', redirectTo: 'login' },
 ];

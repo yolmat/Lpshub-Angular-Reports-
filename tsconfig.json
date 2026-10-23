@@ -15,5 +15,10 @@
     "target": "ES2022",
     "module": "preserve"
   },
-  "angularCompilerOptions": { "strictTemplates": true, "strictInjectionParameters": true, "strictInputAccessModifiers": true, "strictStandalone": true }
+  "angularCompilerOptions": {
+    "strictTemplates": true,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictStandalone": true
+  }
 }

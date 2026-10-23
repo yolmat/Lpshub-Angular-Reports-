@@ -22,12 +22,22 @@
             "styles": ["src/styles.css"]
           },
           "configurations": {
-            "production": { "budgets": [{ "type": "initial", "maximumWarning": "500kB", "maximumError": "1MB" }], "outputHashing": "all" },
+            "production": {
+              "budgets": [{ "type": "initial", "maximumWarning": "500kB", "maximumError": "1MB" }],
+              "outputHashing": "all"
+            },
             "development": { "optimization": false, "extractLicenses": false, "sourceMap": true }
           },
           "defaultConfiguration": "production"
         },
-        "serve": { "builder": "@angular/build:dev-server", "configurations": { "development": { "buildTarget": "lpshub-reports:build:development" }, "production": { "buildTarget": "lpshub-reports:build:production" } }, "defaultConfiguration": "development" }
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "development": { "buildTarget": "lpshub-reports:build:development" },
+            "production": { "buildTarget": "lpshub-reports:build:production" }
+          },
+          "defaultConfiguration": "development"
+        }
       }
     }
   },

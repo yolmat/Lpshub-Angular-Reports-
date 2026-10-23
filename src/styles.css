@@ -1,19 +1,97 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* Arquivos oficiais fornecidos no projeto; não há simulação de peso. */
-@font-face { font-family:"Lopes Sans"; src:url("/assets/fonts/LopesSans-Thin.ttf") format("truetype"); font-weight:100; font-style:normal; font-display:swap; }
-@font-face { font-family:"Lopes Sans"; src:url("/assets/fonts/LopesSans-Light.ttf") format("truetype"); font-weight:300; font-style:normal; font-display:swap; }
-@font-face { font-family:"Lopes Sans"; src:url("/assets/fonts/LopesSans-Regular.ttf") format("truetype"); font-weight:400; font-style:normal; font-display:swap; }
-@font-face { font-family:"Lopes Sans"; src:url("/assets/fonts/LopesSans-Medium.ttf") format("truetype"); font-weight:500; font-style:normal; font-display:swap; }
-@font-face { font-family:"Lopes Sans"; src:url("/assets/fonts/LopesSans-SemiBold.ttf") format("truetype"); font-weight:600; font-style:normal; font-display:swap; }
-@font-face { font-family:"Lopes Sans"; src:url("/assets/fonts/LopesSans-Bold.ttf") format("truetype"); font-weight:700; font-style:normal; font-display:swap; }
-@font-face { font-family:"Lopes Sans"; src:url("/assets/fonts/LopesSans-ExtraBold.ttf") format("truetype"); font-weight:800; font-style:normal; font-display:swap; }
-@font-face { font-family:"Lopes Sans"; src:url("/assets/fonts/LopesSans-Italic.ttf") format("truetype"); font-weight:400; font-style:italic; font-display:swap; }
-@font-face { font-family:"Lopes Sans"; src:url("/assets/fonts/LopesSans-MediumItalic.ttf") format("truetype"); font-weight:500; font-style:italic; font-display:swap; }
-@font-face { font-family:"Lopes Sans"; src:url("/assets/fonts/LopesSans-SemiBoldItalic.ttf") format("truetype"); font-weight:600; font-style:italic; font-display:swap; }
-@font-face { font-family:"Lopes Sans"; src:url("/assets/fonts/LopesSans-BoldItalic.ttf") format("truetype"); font-weight:700; font-style:italic; font-display:swap; }
-@font-face { font-family:"Lopes Sans"; src:url("/assets/fonts/LopesSans-ExtraBoldItalic.ttf") format("truetype"); font-weight:800; font-style:italic; font-display:swap; }
-@font-face { font-family:"Born Ready Upright"; src:url("/assets/fonts/bornreadyupright.ttf") format("truetype"); font-weight:400; font-style:normal; font-display:swap; }
+@font-face {
+  font-family: 'Lopes Sans';
+  src: url('/assets/fonts/LopesSans-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lopes Sans';
+  src: url('/assets/fonts/LopesSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lopes Sans';
+  src: url('/assets/fonts/LopesSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lopes Sans';
+  src: url('/assets/fonts/LopesSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lopes Sans';
+  src: url('/assets/fonts/LopesSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lopes Sans';
+  src: url('/assets/fonts/LopesSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lopes Sans';
+  src: url('/assets/fonts/LopesSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lopes Sans';
+  src: url('/assets/fonts/LopesSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lopes Sans';
+  src: url('/assets/fonts/LopesSans-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lopes Sans';
+  src: url('/assets/fonts/LopesSans-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lopes Sans';
+  src: url('/assets/fonts/LopesSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Lopes Sans';
+  src: url('/assets/fonts/LopesSans-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Born Ready Upright';
+  src: url('/assets/fonts/bornreadyupright.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 @theme inline {
   --color-brand: var(--brand);
@@ -26,17 +104,52 @@
   --color-selected: var(--selected);
   --color-primary: var(--primary);
   --color-on-primary: var(--on-primary);
-  --font-interface: "Lopes Sans", Arial, sans-serif;
-  --font-accent: "Born Ready Upright", cursive;
+  --font-interface: 'Lopes Sans', Arial, sans-serif;
+  --font-accent: 'Born Ready Upright', cursive;
 }
 
 @layer base {
-  :root { --brand:#eb194b; --canvas:#f7f7f7; --surface:#fff; --subtle:#f1f1f1; --text:#000; --muted:#575757; --border:#dcdcdc; --selected:#fff0f4; --primary:#000; --on-primary:#fff; }
+  :root {
+    --brand: #eb194b;
+    --canvas: #f7f7f7;
+    --surface: #fff;
+    --subtle: #f1f1f1;
+    --text: #000;
+    --muted: #575757;
+    --border: #dcdcdc;
+    --selected: #fff0f4;
+    --primary: #000;
+    --on-primary: #fff;
+  }
   /* O tema é aplicado no host Angular, não no body: defina também a cor herdada. */
-  [data-theme] { color:var(--text); }
-  [data-theme="dark"] { --canvas:#111113; --surface:#1c1c20; --subtle:#27272d; --text:#f5f5f7; --muted:#b9b9c3; --border:#50505a; --selected:#351821; --primary:#f5f5f7; --on-primary:#111113; color-scheme:dark; }
-  * { box-sizing:border-box; }
-  body { @apply m-0 bg-canvas font-interface text-sm leading-6 text-foreground; }
-  button, input, select { font:inherit; }
-  :focus-visible { outline:3px solid var(--brand); outline-offset:2px; }
+  [data-theme] {
+    color: var(--text);
+  }
+  [data-theme='dark'] {
+    --canvas: #111113;
+    --surface: #1c1c20;
+    --subtle: #27272d;
+    --text: #f5f5f7;
+    --muted: #b9b9c3;
+    --border: #50505a;
+    --selected: #351821;
+    --primary: #f5f5f7;
+    --on-primary: #111113;
+    color-scheme: dark;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    @apply m-0 bg-canvas font-interface text-sm leading-6 text-foreground;
+  }
+  button,
+  input,
+  select {
+    font: inherit;
+  }
+  :focus-visible {
+    outline: 3px solid var(--brand);
+    outline-offset: 2px;
+  }
 }

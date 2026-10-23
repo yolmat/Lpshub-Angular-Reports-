@@ -6,7 +6,9 @@
     "start": "node ./node_modules/@angular/cli/bin/ng.js serve",
     "build": "node ./node_modules/@angular/cli/bin/ng.js build",
     "test": "node ./node_modules/@angular/cli/bin/ng.js test",
-    "lint": "node ./node_modules/@angular/cli/bin/ng.js lint"
+    "lint": "node ./node_modules/@angular/cli/bin/ng.js lint",
+    "format": "prettier --write \"src/**/*.{ts,html,css}\" \"docs/**/*.md\" \"*.json\"",
+    "format:check": "prettier --check \"src/**/*.{ts,html,css}\" \"docs/**/*.md\" \"*.json\""
   },
   "dependencies": {
     "@angular/animations": "^21.2.25",
@@ -28,6 +30,7 @@
     "@angular/compiler-cli": "^21.0.0",
     "@tailwindcss/postcss": "^4.3.3",
     "postcss": "^8.5.31",
+    "prettier": "3.7.4",
     "tailwindcss": "^4.3.3",
     "typescript": "~5.9.0"
   }

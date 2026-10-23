@@ -73,3 +73,11 @@
 - Motivo: implementar as referências visuais fornecidas sem criar autenticação ou contratos de API fictícios.
 - Validação: inspeção visual dos previews de referência e da prévia local realizada; `npm install` e build de produção Angular concluídos com sucesso.
 - Impactos/pendências: não há fontes web licenciadas no pacote; a tipografia usa fallback até a licença/arquivos adequados serem disponibilizados. Integração de API, Matchcode e exportação XLSX permanecem fora deste escopo visual.
+
+### 2026-10-23 08:50:19 -03:00 — Padronização automática de formatação
+
+- Autor: IA — /root.
+- Arquivos/áreas: fontes em `src`, configurações raiz, `package.json`, `package-lock.json` e documentação operacional.
+- Alteração: adicionado Prettier 3.7.4, scripts `format` e `format:check`, configuração compartilhada e aplicada a todo o código e às configurações textuais do projeto; referências visuais em `design/` foram preservadas.
+- Motivo: padronizar a formatação do código conforme solicitado.
+- Validação: `npm run format`, `npm run format:check` e `npm run build` concluídos com sucesso.

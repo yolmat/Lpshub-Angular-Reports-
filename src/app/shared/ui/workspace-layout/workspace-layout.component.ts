@@ -6,6 +6,6 @@ import { AppShellComponent } from '../app-shell/app-shell.component';
   selector: 'lps-workspace-layout',
   imports: [AppShellComponent, RouterOutlet],
   template: '<lps-app-shell><router-outlet /></lps-app-shell>',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class WorkspaceLayoutComponent {}
